@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Digitales Wichtelgeschenk</title>
+  <style>
+    body {
+      font-family: monospace;
+      background: #0f1220;
+      color: #eaeaf0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: #1a1f3c;
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 500px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    pre {
+      background: #0f1220;
+      padding: 1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 0.6rem 1rem;
+      border: none;
+      border-radius: 8px;
+      background: #4f7cff;
+      color: white;
+      font-family: monospace;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #6a91ff;
+    }
+
+    .solution {
+      margin-top: 1.5rem;
+      display: none;
+      color: #9affc8;
+    }
+
+    .tree {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #7cff9a;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+<div class="tree">
+<pre> 
+ 0 
+101 
+11011 
+1010101 
+111111111 
+10101010101 
+1111111111111 
+1 
+</pre> 
+</div>
+
+  <h1>🎁 Digitales Wichtelgeschenk</h1>
+
+  <p>Entschlüssele die Botschaft:</p>
+
+<pre>
+01000110 01110010 01101111 01101000 01100101 01110011
+00100000
+01001110 01100101 01110101 01100101 01110011
+00100000
+01001010 01100001 01101000 01110010
+</pre>
+
+  <button onclick="showSolution()">Decode</button>
+
+  <div class="solution" id="solution">
+    🎉 <strong>Frohes Neues Jahr!</strong><br><br>
+    Kein Block, kein Stift –  
+    dafür 1 & 0, ein kleines Rätsel  
+    und die besten Wünsche fürs neue Jahr 😊
+  </div>
+</div>
+
+<script>
+  function showSolution() {
+    document.getElementById("solution").style.display = "block";
+  }
+</script>
+
+</body>
+</html>
